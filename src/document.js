@@ -38,10 +38,9 @@ class Document {
   }
 
   print () {
-    this.#linebreak = '\n'
-    return 'Título: ' + this.title + this.linebreak +
-    'Autor: ' + this.#author + this.linebreak +
-    'Fecha: ' + this.#date + this.linebreak
+    return 'Título: ' + this.title + Document.linebreak +
+    'Autor: ' + this.#author + Document.linebreak +
+    'Fecha: ' + this.#date + Document.linebreak
   }
 }
 

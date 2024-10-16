@@ -1,4 +1,5 @@
 const Component = require('./component')
+const Document = require('./document')
 
 class Text extends Component {
   constructor (text = '') {
@@ -8,7 +9,7 @@ class Text extends Component {
 
   print () {
     this.linebreak = '\n'
-    return this.text + '' + this.linebreak
+    return this.text + '' + Document.linebreak
   }
 
   countWords () {
